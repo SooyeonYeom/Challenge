@@ -22,7 +22,7 @@ num2 = int(input("당신이 두번째로 좋아하는 숫자는 무엇인가요?
 
 result = num * num2
 
-print(f"흠.. {name}님이 좋아하는 두 숫자를 곱하면 {result}가 나오네요.")
+print(f"흠.. {name}님이 좋아하는 두 숫자를 곱하면... {result}가 나오네요.")
 
 print()
 print()
