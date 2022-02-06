@@ -29,23 +29,11 @@ W2 = f"\n!WRONG! 틀렸습니다. 제가 좋아하는 숫자는 {ANS}보다 낮�
 
 while True:
     if flag:
-        A = int(input("\n다시 기회를 드릴게요. 1부터 30까지 중, 제가 좋아하는 숫자를 맞춰보세요. : "))
+        print("\n다시 기회를 드릴게요.")
 
-        if A == ANS:
-            print(C)
-            break
+    flag = True
 
-        elif A < ANS:
-            print(W)
-            continue
-
-        else:
-            print(W)
-        continue
-
-    else:
-
-        A = int(input("\n1부터 30까지 중, 제가 좋아하는 숫자를 맞춰보세요. : "))
+    A = int(input("\n1부터 30까지 중, 제가 좋아하는 숫자를 맞춰보세요. : "))
 
     if A == ANS:
         print(C)
@@ -53,12 +41,10 @@ while True:
 
     elif A < ANS:
         print(W)
-        flag = True
         continue
 
     else:
         print(W2)
-        flag = True
         continue
 
 
@@ -67,4 +53,10 @@ print()
 print()
 
 
-# 후기 :  랜덤인트로 정답값 랜덤추출, 맞거나 틀린건(높고 낮은건) if문으로 출력, 반복되는건 while문으로 반복
+# 후기 : 1) 랜덤인트로 정답값 랜덤으로 정한 후
+#       2) 맞거나 틀린건(높고 낮은건) if문으로 단순하게 구현
+#       3) 게임처럼 반복되는건 while문으로 구현
+
+# 리팩토링 :
+# flag=False는 1차 시도 때 if를 지나오기 위한 장치이기 때문에
+# 1차시도 if를 지난 후에 "바로" 붙여줘도 된다 ("if재시도" 이 사이에!  "1차시도")
