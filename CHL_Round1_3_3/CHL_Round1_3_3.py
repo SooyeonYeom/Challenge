@@ -31,12 +31,12 @@ print()
 for i in range(10):
     num = list.pop()  # 역순으로 지워가며 뽑기
     print(f"\n{num}..")  # 안내문 출력
-    playsound(f"{num}.mp3")  # 사운드 출력
+    playsound(f"CHL_Round1_3_3/{num}.mp3")  # 사운드 출력
     time.sleep(0.2)  # 시간 지연
 
 print("\n0~!! 2022년 새해가 밝았습니다~!")
 
-playsound("HNY.mp3")
+playsound("CHL_Round1_3_3/HNY.mp3")
 
 
 print()

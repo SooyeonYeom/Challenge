@@ -29,6 +29,7 @@ for i in range(10):
     list.append(nums)
 
 list.sort()
+
 end = f"\n↓↓ 폭탄 숫자 공개 ↓↓ \n\n{list}"
 
 while True:

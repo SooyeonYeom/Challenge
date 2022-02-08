@@ -137,9 +137,9 @@ first_name = "수연"
 
 
 animal = {
-    "강아지": "Sound2.mp3",
-    "고양이": "Sound1.mp3",
-    "참새": "Sound3.wav",
+    "강아지": "CHL_Round1_2/Sound2.mp3",
+    "고양이": "CHL_Round1_2/Sound1.mp3",
+    "참새": "CHL_Round1_2/Sound3.wav",
 }
 
 
